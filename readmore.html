@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="navbar.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Melco <span>Lauwento</span></a></div>
+                <ul class="links">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="index.html ">About</li>
+                        <li><a href="index.html">Learn</a></li>
+                        <li><a href="index.htmlt">Contact</a></li>
+                </ul>
+                <li class="action_btn"><i class="fa fa-thumbs-up" ></i></li>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars "></i>
+                </div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="index.html" a href="#hero">Home</a></li>
+                <li><a href="index.html">About</li>
+                <li><a href="index.html">Learn</a></li>
+                <li><a href="index.htmlt">Contact</a></li>
+                <li class="action_btn"><i class="fa fa-thumbs-up" ></i></li>
+    
+            </div>
+    </header>
+    <div class="more">
+        <img src="profil.jpg" alt="" class="foto1">
+        <p>Selamat datang di Portofolio saya !</p>
+        <br>
+        <p>Saya adalah seorang Mahasiswa di Universitas Komputer Indonesia</p>
+        <p>sedang mempelajari membuat website Portofolio</p>
+    <p>Saya memiliki keahlian bidang dalam :</p>
+    <ul style="list-style-type:circle" >
+        <li >
+            C Language
+        </li>
+        <li >
+            HTML
+        </li>
+        <li >
+            CSS
+        </li>
+    </ul>
+    <p>Dalam setiap Tugas yang saya kerjakan, saya berusaha untuk memberikan solusi yang inovatif dan berkualitas tinggi.</p>
+   <p>Didalam website ini anda dapat lebih mengenal saya,dan anda bisa melihat skill apa saja yang saya kuasai</p>
+   <br>
+   <p>Saya sangat senang dalam mempelajari hal baru ,dan saya suka mengulik hal  yang belum saya mengerti.</p>
+   <p>Saya juga terbuka untuk kerjasama dan proyek baru. Jika Anda memiliki pertanyaan atau ingin berdiskusi lebih lanjut, jangan ragu untuk menghubungi saya melalui halaman kontak.</p>
+<br><br>
+<p>Terima kasih telah mengunjungi portofolio saya. Saya berharap dapat bekerja sama dengan Anda di masa depan!</p>
+</div>
+
+    <footer>
+        <div class="row" id="contact">
+            <div class="col">
+                <span class="logo2">Melco Lauwento</span>
+                <p>Ini ada lah website Portofolio pertama saya , saya harap dengan website ini anda bisa lebih mengenal
+                    tentang saya, website ini berisi tentang biodata saya. Jika ada yang ingin di tanyakan silahkan hubungin 
+                    kontak saya.
+                </p>
+                <p class="email-id">melco05lauwento.1@gmail.com</p>
+                <p>No.telp : 0813-4828-5979</p>
+            </div>
+                <div class="col">
+                    <h3>University <div class="underline"><span></span></div></h3>
+                    <p>Unikom</p>
+                    <p>Universitas</p>
+                    <p>Komputer Indonesia</p>
+                
+                    <h4>
+                        Telepon	:	022-2532009, 022-2504119</h4>
+                        <h4>Fax	:	022-2533754</h4>
+                </div>
+                <div class="col">
+                    <h3>Links<div class="underline"><span></span></div></h3>
+                    <ul class="ul2">
+                        <li class="li2"><a href="index.html"class="a2">Home</a></li>
+                        <li class="li2"><a href="index.html"class="a2">About</li>
+                        <li class="li2"><a href="index.html"class="a2">Learn</a></li>
+                        <li class="li2"><a href="index.html"class="a2">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Newletter<div class="underline"><span></span></div></h3>
+                    <form >
+                        <input type="email" placeholder="Enter your Email id" required>
+                        <button type="sumbit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="socil-icons">
+                        <i class="fab fa-brands fa-facebook-f"></i>
+                        <i class="fab fa-brands fa-instagram"></i>
+                        <i class="fab fa-brands fa-twitter"></i>
+                       
+                    </div>
+                </div>
+        </div>
+        <hr>
+        <p class="copyright">Melco Lauwento © 2023 - All Right Reserved</p>
+      </footer>
+      <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        } 
+    </script>
+</body>
+</html>
